@@ -1,6 +1,14 @@
 # MTG Deck Guide AI
 
-An AI-powered Magic: The Gathering deck building and analysis tool.
+An AI-powered Magic: The Gathering deck helper and analysis tool.
+
+The goal of this project was to make a simple application that utilizes a frontend and backend. 
+
+On the frontend, you can search for a Magic: The Gathering card of your choice. This will retrieve card info from the Scryfall public API. 
+
+From there, if you like the card, you can select "Generate Deck Idea", which will send your card of choice to the OpenAI API and generate ideas for other cards in the deck, suggest synergies and strategies for how to use the deck!
+
+This process is handled by the Go backend server. The server simply listens for requests, extracts the card name entered, and sends this info in a pre-generated prompt to OpenAI. 
 
 ## Project Structure
 
